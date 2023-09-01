@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+	<script type="text/javascript" src="quiz.js"></script>
+	<script>function check(){
+	var c=0; 
+	var q1=document.quiz.q1.value;
+	var q2=document.quiz.q2.value;
+	var q3=document.quiz.q3.value;
+	var q4=document.quiz.q4.value;
+	var q5=document.quiz.q5.value;
+	var q6=document.quiz.q6.value;
+	var q7=document.quiz.q7.value;
+	var q8=document.quiz.q8.value;
+	var q9=document.quiz.q9.value;
+	var q10=document.quiz.q10.value;
+	var result=document.getElementById('result');
+	var quiz=document.getElementById('quiz');
+
+
+	if(q1=="Structure Query Language"){c++}
+	if(q2=="DECIMAL"){c++}
+	if(q3=="UPDATE"){c++}
+	if(q4=="COMMIT and ROLLBACK"){c++}
+	if(q5=="TRUNCATE"){c++}
+	if(q6=="Virtual tables"){c++}
+	if(q7=="RAW"){c++}
+	if(q8=="Union"){c++}
+	if(q9=="COMPUTE"){c++}
+	if(q10=="IN"){c++}
+
+	quiz.style.display="none";
+	
+	result.textContent=`Your result is ${c}/10`
+}</script>
+</head>
+<body>
+<form name="quiz" id="quiz">
+	<div>
+		<p>1.What is the full form of SQL?</p>
+		<p><input type="radio" name="q1" value="Structured Query List">A.Structured Query List</p>
+		<p><input type="radio" name="q1" value="Structure Query Language">B.Structure Query Language</p>
+		<p><input type="radio" name="q1" value="Sample Query Language">C.Sample Query Language</p>
+		<p><input type="radio" name="q1" value="None of these.">D.None of these.</p>
+	</div>
+
+	<div>
+		<p>2. Which of the following is not a valid SQL type?</p>
+		<p><input type="radio" name="q2" value="FLOAT">A.FLOAT</p>
+		<p><input type="radio" name="q2" value="NUMERIC">B.NUMERIC</p>
+		<p><input type="radio" name="q2" value="DECIMAL">C.DECIMAL</p>
+		<p><input type="radio" name="q2" value="CHARACTER">D.CHARACTER</p>
+	</div>
+
+	<div>
+		<p>3.Which of the following is not a DDL command?</p>
+		<p><input type="radio" name="q3" value=" TRUNCATE">A.TRUNCATE</p>
+		<p><input type="radio" name="q3" value="ALTER">B.ALTER</p>
+		<p><input type="radio" name="q3" value="CREATE">C.CREATE</p>
+		<p><input type="radio" name="q3" value="UPDATE">D.UPDATE</p>
+	</div>
+
+		<div>
+		<p>4.Which of the following are TCL commands?</p>
+		<p><input type="radio" name="q4" value="COMMIT and ROLLBACK">A.COMMIT and ROLLBACK</p>
+		<p><input type="radio" name="q4" value="UPDATE and TRUNCATE">B.UPDATE and TRUNCATE</p>
+		<p><input type="radio" name="q4" value="SELECT and INSERT">C.SELECT and INSERT</p>
+		<p><input type="radio" name="q4" value="GRANT and REVOKE">D.GRANT and REVOKE</p>
+	</div>
+
+	<div>
+		<p>5. Which statement is used to delete all rows in a table without having the action logged?</p>
+		<p><input type="radio" name="q5" value="DELETE">A.DELETE</p>
+		<p><input type="radio" name="q5" value="REMOVE">B.REMOVE</p>
+		<p><input type="radio" name="q5" value="DROP">C.DROP</p>
+		<p><input type="radio" name="q5" value="TRUNCATE">D.TRUNCATE</p>
+	</div>
+
+	<div>
+		<p>6.SQL Views are also known as</p>
+		<p><input type="radio" name="q6" value="Simple tables">A.Simple tables</p>
+		<p><input type="radio" name="q6" value="Virtual tables">B.Virtual tables</p>
+		<p><input type="radio" name="q6" value="Complex tables">C.Complex tables</p>
+		<p><input type="radio" name="q6" value="Actual Tables">D.Actual Tables</p>
+	</div>
+
+	<div>
+		<p>7. Which datatype can store unstructured data in a column?</p>
+		<p><input type="radio" name="q7" value="CHAR">A.CHAR</p>
+		<p><input type="radio" name="q7" value="RAW">B.RAW</p>
+		<p><input type="radio" name="q7" value="NUMERIC">C.NUMERIC</p>
+		<p><input type="radio" name="q7" value="VARCHAR">D.VARCHAR</p>
+	</div>
+
+		<div>
+		<p>8.Which of the following is not Constraint in SQL?</p>
+		<p><input type="radio" name="q8" value="Primary Key">A.Primary Key</p>
+		<p><input type="radio" name="q8" value="Not Null">Not Null</p>
+		<p><input type="radio" name="q8" value="Check">C.Check</p>
+		<p><input type="radio" name="q8" value="Union">D.Union</p>
+	</div>
+
+	<div>
+		<p>9.Which of the following is not a valid aggregate function?</p>
+		<p><input type="radio" name="q9" value="COUNT">A.COUNT</p>
+		<p><input type="radio" name="q9" value="COMPUTE">B.COMPUTE</p>
+		<p><input type="radio" name="q9" value="SUM">C.SUM</p>
+		<p><input type="radio" name="q9" value="MAX">D.MAX</p>
+	</div>
+
+	<div>
+		<p>10.Which operator is used to compare a value to a specified list of values?</p>
+		<p><input type="radio" name="q10" value="ANY">A.ANY</p>
+		<p><input type="radio" name="q10" value="BETWEEN">B.BETWEEN</p>
+		<p><input type="radio" name="q10" value="ALL">C.ALL</p>
+		<p><input type="radio" name="q10" value="IN">D.IN</p>
+	</div>
+	<center><input type="button" name="Submit" value="Submit" id="button" onclick="check()"></center>
+</form>
+<p id="result"></p>
+<style>
+	
+		body{
+        background-image: url("https://img.freepik.com/free-vector/blue-web-support-help-page-template-design_1017-26768.jpg?w=2000");
+        background-repeat: no-repeat;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    
+	}
+	div{
+		color: white;
+	}
+	
+</body>
+</html>
