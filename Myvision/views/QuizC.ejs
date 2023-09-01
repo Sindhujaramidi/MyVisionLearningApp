@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+	<script type="text/javascript" src="quiz.js"></script>
+	<script>function check(){
+	var c=0;
+	var q1=document.quiz.q1.value;
+	var q2=document.quiz.q2.value;
+	var q3=document.quiz.q3.value;
+	var q4=document.quiz.q4.value;
+	var q5=document.quiz.q5.value;
+	var q6=document.quiz.q6.value;
+	var q7=document.quiz.q7.value;
+	var q8=document.quiz.q8.value;
+	var q9=document.quiz.q9.value;
+	var q10=document.quiz.q10.value;
+	var result=document.getElementById('result');
+	var quiz=document.getElementById('quiz');
+
+
+	if(q1=="Dennis Ritchie"){c++}
+	if(q2=="Lower Case letters"){c++}
+	if(q3=="all of the mentioned"){c++}
+	if(q4=="#"){c++}
+	if(q5=="1 Byte"){c++}
+	if(q6=="Derived Data type"){c++}
+	if(q7=="Variables"){c++}
+	if(q8=="char < int < double"){c++}
+	if(q9=="Collection of similar type of elements"){c++}
+	if(q10=="struct"){c++}
+
+	quiz.style.display="none";
+	
+	result.textContent=`Your result is ${c}/10`
+}</script>
+</head>
+<body>
+<form name="quiz" id="quiz">
+	<div>
+		<p>1.Who is the father of C language?</p>
+		<p><input type="radio" name="q1" value="Steve Jobs">A.Steve Jobs</p>
+		<p><input type="radio" name="q1" value="James Gosling">B.James Gosling</p>
+		<p><input type="radio" name="q1" value="Dennis Ritchie">C.Dennis Ritchie</p>
+		<p><input type="radio" name="q1" value="Rasmus Lerdorf">D.Rasmus Lerdorf</p>
+	</div>
+
+	<div>
+		<p>2.All keywords in C are in ____</p>
+		<p><input type="radio" name="q2" value="Lower Case letters">A.Lower Case letters</p>
+		<p><input type="radio" name="q2" value="Upper Case letters">B.Upper Case letters</p>
+		<p><input type="radio" name="q2" value="Both">C.Both</p>
+		<p><input type="radio" name="q2" value="None of the mentioned">D.None of the mentioned</p>
+	</div>
+
+	<div>
+		<p>3.What is an example of iteration in C?</p>
+		<p><input type="radio" name="q3" value="for">A.for</p>
+		<p><input type="radio" name="q3" value="do-while">B.do-while</p>
+		<p><input type="radio" name="q3" value="while">C.while</p>
+		<p><input type="radio" name="q3" value="all of the mentioned">D.all of the mentioned</p>
+	</div>
+
+		<div>
+		<p>4.The C-preprocessors are specified with ___ symbol</p>
+		<p><input type="radio" name="q4" value="#">A.#</p>
+		<p><input type="radio" name="q4" value="$">B.$</p>
+		<p><input type="radio" name="q4" value=" ">C. </p>
+		<p><input type="radio" name="q4" value="&">D.&</p>
+	</div>
+
+	<div>
+		<p>5.What is the sizeof(char) in a 32-bit C compiler?</p>
+		<p><input type="radio" name="q5" value="1 Bit">A.1 Bit</p>
+		<p><input type="radio" name="q5" value="2 Bits">B.2 Bits</p>
+		<p><input type="radio" name="q5" value="1 Byte">C.1 Byte</p>
+		<p><input type="radio" name="q5" value="2 Bytes">D.2 Bytes</p>
+	</div>
+
+	<div>
+		<p>6.Array is __ datatype in C Programming language.</p>
+		<p><input type="radio" name="q6" value="Derived Data type">A.Derived Data type</p>
+		<p><input type="radio" name="q6" value="Primitive Data type">B.Primitive Data type</p>
+		<p><input type="radio" name="q6" value="Custom Data type">C.Custom Data type</p>
+		<p><input type="radio" name="q6" value="None of these">D.None of these</p>
+	</div>
+
+	<div>
+		<p>7.What are the entities whose values can be changed called?</p>
+		<p><input type="radio" name="q7" value="Constants">A.Constants</p>
+		<p><input type="radio" name="q7" value="Variables">B.Variables</p>
+		<p><input type="radio" name="q7" value="Modules">C.Modules</p>
+		<p><input type="radio" name="q7" value="Tokens">D.Tokens</p>
+	</div>
+
+		<div>
+		<p>8.Which is correct with respect to size of the datatypes?</p>
+		<p><input type="radio" name="q8" value="char > int > float">A.char > int > float</p>
+		<p><input type="radio" name="q8" value="int > char > float">B.int > char > float</p>
+		<p><input type="radio" name="q8" value="char < int < double">C.char < int < double</p>
+		<p><input type="radio" name="q8" value="double > char > int">D.double > char > int</p>
+	</div>
+
+	<div>
+		<p>9.What is Array?</p>
+		<p><input type="radio" name="q9" value="Collection of different type of elements">A.Collection of different type of elements</p>
+		<p><input type="radio" name="q9" value="Collection of similar type of elements">B.Collection of similar type of elements</p>
+		<p><input type="radio" name="q9" value="None of the above">C.None of the above</p>
+		<p><input type="radio" name="q9" value="Both A and C">D.Both A and C</p>
+	</div>
+
+	<div>
+		<p>10.Which of the data types has the size that is variable?</p>
+		<p><input type="radio" name="q10" value="int">A.int</p>
+		<p><input type="radio" name="q10" value="struct">B.struct</p>
+		<p><input type="radio" name="q10" value="float">C.float</p>
+		<p><input type="radio" name="q10" value="double">D.double</p>
+	</div>
+	<center><input type="button" name="Submit" value="Submit" id="button" onclick="check()"></center>
+</form>
+<p id="result"></p>
+<style>
+	
+		body{
+        background-image: url("https://img.freepik.com/free-vector/blue-web-support-help-page-template-design_1017-26768.jpg?w=2000");
+        background-repeat: no-repeat;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    
+	}
+	div{
+		color: white;
+	}
+	
+	</style>
+</body>
+</html>
